@@ -1,0 +1,61 @@
+.first-block{
+    @include set-container;
+    h1{
+        @include set-h1;
+    }
+    p {
+        @include set-p;
+    }
+    a {
+      @include set-button;
+    }
+    img {
+        display: block;
+        width: 100%;
+        margin: 100px auto;
+    }
+}
+.second-block{
+    @include set-container;
+
+    div{
+        width: 230px;
+        margin: 0 auto;
+        &:first-of-type::before{
+            content: " ";
+            display: block;
+            position: relative;
+            left: 5px;
+            width: 48px;
+            height: 40px;
+            background: url('/images/icon-communities.svg') no-repeat;
+        }
+        &:last-of-type{
+            margin-bottom: 100px;
+            &::before{
+            content: " ";
+            display: block;
+            position: relative;
+            left: 5px;
+            width: 48px;
+            height: 40px;
+            background: url('/images/icon-messages.svg') no-repeat;
+            }
+        }
+        h1 {
+            font-size: $font-proppins;
+            text-align: center;
+            font-size: 5rem;        
+            margin-bottom: 10px; 
+        }
+        p{
+            font-size: $font-open;
+            text-align: center;
+            font-size: 0.98rem;
+            margin-bottom: 30px; 
+        }
+    }
+}
+.third-block-detail{
+    //You stopped here
+}

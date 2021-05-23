@@ -1,0 +1,227 @@
+/*
+breakpoints
+  'small': 375px,
+  'medium': 768px,
+  'large': 1024px,
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  font-size: 100%;
+  color: #00252e;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #4e4d4d;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgba(131, 131, 131, 0.746);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #383838;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: rgba(27, 27, 27, 0.8);
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  max-width: 1700px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+nav img {
+  width: 40%;
+  max-width: 220px;
+}
+
+nav a {
+  color: #ff52bf;
+  border: 1px solid #ff52bf;
+  border-radius: 20px;
+  padding: 8px 25px;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  color: #ff8fd8;
+  border-color: #ff8fd8;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 5px 5px rgba(158, 156, 156, 0.733);
+          box-shadow: 0 5px 5px rgba(158, 156, 156, 0.733);
+}
+
+.first-block {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.first-block h1 {
+  font-size: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.first-block p {
+  font-size: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 0.98rem;
+  width: 60%;
+  min-width: 290px;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.first-block a {
+  display: block;
+  text-align: center;
+  width: 60%;
+  max-width: 300px;
+  margin: 0 auto;
+  color: white;
+  background-color: #ff52bf;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 15px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.first-block a:hover {
+  border-color: #ff8fd8;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 5px 5px rgba(158, 156, 156, 0.733);
+          box-shadow: 0 5px 5px rgba(158, 156, 156, 0.733);
+}
+
+.first-block img {
+  display: block;
+  width: 100%;
+  margin: 100px auto;
+}
+
+.second-block {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.second-block div {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.second-block div:first-of-type::before {
+  content: " ";
+  display: block;
+  position: relative;
+  left: 5px;
+  width: 48px;
+  height: 40px;
+  background: url("/images/icon-communities.svg") no-repeat;
+}
+
+.second-block div:last-of-type {
+  margin-bottom: 100px;
+}
+
+.second-block div:last-of-type::before {
+  content: " ";
+  display: block;
+  position: relative;
+  left: 5px;
+  width: 48px;
+  height: 40px;
+  background: url("/images/icon-messages.svg") no-repeat;
+}
+
+.second-block div h1 {
+  font-size: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.second-block div p {
+  font-size: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 0.98rem;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .second-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-items: center;
+  }
+  .second-block div {
+    margin-bottom: 100px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

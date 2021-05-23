@@ -1,0 +1,11 @@
+@media screen and (min-width:700px) {
+    .second-block{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        
+        div {
+            margin-bottom: 100px;
+        }
+    }    
+}

@@ -1,34 +1,46 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
-// -----------------------------------------------------------------------------
+@mixin set-container {
+    width: 90%;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+@mixin set-h1 {
+    font-size: $font-proppins;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;    
+}
+@mixin set-p {
+    font-size: $font-open;
+    text-align: center;
+    font-size: 0.98rem;
+    width:60%;
+    min-width: 290px;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 30px; 
+}
+@mixin set-button{
+    display: block;
+    text-align: center;
+    width: 60%;
+    max-width: 300px;
+    margin: 0 auto;
+    color: white;
+    background-color: $pink;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 15px 0;
+    font-family: $font-open;
+    font-weight: 600;
+    font-size:1.05rem;
+    transition: 0.5s;
 
-/// Event wrapper
-/// @author Harry Roberts
-/// @param {Bool} $self [false] - Whether or not to include current selector
-/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
-@mixin on-event($self: false) {
-  @if $self {
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
+    &:hover{
+        border-color: $light-pink;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 5px $grey-shadow;
     }
-  } @else {
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  }
 }
 
-/// Make a context based selector a little more friendly
-/// @author Kitty Giraudel
-/// @param {String} $context
-@mixin when-inside($context) {
-  #{$context} & {
-    @content;
-  }
-}
+
 
