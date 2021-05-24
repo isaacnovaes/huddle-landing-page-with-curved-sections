@@ -1,5 +1,5 @@
 @media screen and (min-width:700px) {
-    .second-block{
+    .second-block-numbers{
         display: flex;
         justify-content: space-around;
         justify-items: center;
@@ -8,4 +8,74 @@
             margin-bottom: 100px;
         }
     }    
+    .third-block-detail{
+        div.set-background-first{
+            &::before{
+                background: white url('/images/bg-section-top-desktop-1.svg') no-repeat center;
+                background-size: cover;
+                width: 100%;
+                height: 200px;
+            }       
+            &::after{
+                background: white url('/images/bg-section-bottom-desktop-1.svg') no-repeat center;
+                background-size: cover;
+                width: 100%;
+                height: 200px;
+            }
+        }
+        div.set-background-second{               
+            &::before{
+                background: white url('/images/bg-section-top-desktop-2.svg') no-repeat center;
+                background-size: cover;
+                width: 100%;
+                height: 200px;
+                margin-top: 50px;
+            }
+            &::after{
+                background: white url('/images/bg-section-bottom-desktop-2.svg') no-repeat center;
+                background-size: cover;
+                width: 100%;
+                height: 200px;
+            }
+        }
+       
+        div.block{
+            display: flex;
+            align-items: flex-end;
+            @include set-container;
+
+            &:first-of-type{
+                figure{
+                    order:2;
+                }
+                div.text{
+                    order:1;
+                }
+            }
+            &:last-of-type{
+                figure{
+                    order:2;
+                }
+                div.text{
+                    order:1;
+                }
+            }
+        }
+        div.text{
+            align-self: center;
+        }
+        figure,div.text{
+            flex-basis: 45%;            
+        }
+     
+    }
+
+    footer {
+        &::before{
+            background:white url('/images/bg-footer-top-desktop.svg') no-repeat bottom; 
+            background-size:cover;
+            width: 100%;
+            height: 250px;  
+        }
+    }
 }

@@ -1,13 +1,14 @@
 @mixin set-container {
     width: 90%;
     max-width: $max-width;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 @mixin set-h1 {
     font-size: $font-proppins;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;    
+    color: $very-dark-cyan;
 }
 @mixin set-p {
     font-size: $font-open;
@@ -18,6 +19,7 @@
     max-width: 650px;
     margin: 0 auto;
     margin-bottom: 30px; 
+    color: $very-dark-cyan;
 }
 @mixin set-button{
     display: block;
@@ -39,6 +41,7 @@
         border-color: $light-pink;
         transform: translateY(-3px);
         box-shadow: 0 5px 5px $grey-shadow;
+        background-color: hsla(322, 100%, 66%, 0.666);
     }
 }
 
