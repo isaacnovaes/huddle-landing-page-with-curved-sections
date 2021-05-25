@@ -1,6 +1,6 @@
 # Frontend Mentor - Huddle landing page with curved sections solution
+![Project preview](/design/desktop-preview.jpg) 
 
-This is a solution to the [Huddle landing page with curved sections challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2). 
 
 ## Table of contents
 
@@ -27,14 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-- Mobile[](./screenshot.jpg)
-- Desktop[](./screenshot.jpg)
-- Extra[](./screenshot.jpg)
+- [Mobile](/design/Mobile.png)
+- [Desktop](/design/Desktop.png)
+- [Active states](/design/active-states.jpg)
 
 ### Links
 
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live site](https://huddlecurvedsections.netlify.app)
 
 ## My process
 
