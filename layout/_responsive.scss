@@ -1,81 +1,119 @@
-@media screen and (min-width:700px) {
-    .second-block-numbers{
+@media screen and (min-width: 700px) {
+    .second-block-numbers {
         display: flex;
         justify-content: space-around;
         justify-items: center;
-        
+
         div {
             margin-bottom: 100px;
+            &:first-of-type::before {
+                left: 25px;
+            }
         }
-    }    
-    .third-block-detail{
-        div.set-background-first{
-            &::before{
-                background: white url('/images/bg-section-top-desktop-1.svg') no-repeat center;
+    }
+    .third-block-detail {
+        div.set-background-first {
+            &::before {
+                background: white url("/images/bg-section-top-desktop-1.svg")
+                    no-repeat center;
                 background-size: cover;
                 width: 100%;
                 height: 200px;
-            }       
-            &::after{
-                background: white url('/images/bg-section-bottom-desktop-1.svg') no-repeat center;
+            }
+            &::after {
+                background: white url("/images/bg-section-bottom-desktop-1.svg")
+                    no-repeat center;
                 background-size: cover;
                 width: 100%;
                 height: 200px;
             }
         }
-        div.set-background-second{               
-            &::before{
-                background: white url('/images/bg-section-top-desktop-2.svg') no-repeat center;
+        div.set-background-second {
+            &::before {
+                background: white url("/images/bg-section-top-desktop-2.svg")
+                    no-repeat center;
                 background-size: cover;
                 width: 100%;
                 height: 200px;
                 margin-top: 50px;
             }
-            &::after{
-                background: white url('/images/bg-section-bottom-desktop-2.svg') no-repeat center;
+            &::after {
+                background: white url("/images/bg-section-bottom-desktop-2.svg")
+                    no-repeat center;
                 background-size: cover;
                 width: 100%;
                 height: 200px;
             }
         }
-       
-        div.block{
+
+        div.block {
             display: flex;
             align-items: flex-end;
             @include set-container;
 
-            &:first-of-type{
-                figure{
-                    order:2;
+            &:first-of-type {
+                figure {
+                    order: 2;
                 }
-                div.text{
-                    order:1;
+                div.text {
+                    order: 1;
                 }
             }
-            &:last-of-type{
-                figure{
-                    order:2;
+            &:last-of-type {
+                figure {
+                    order: 2;
                 }
-                div.text{
-                    order:1;
+                div.text {
+                    order: 1;
                 }
             }
         }
-        div.text{
+        div.text {
             align-self: center;
         }
-        figure,div.text{
-            flex-basis: 45%;            
+        figure,
+        div.text {
+            flex-basis: 45%;
         }
-     
     }
 
     footer {
-        &::before{
-            background:white url('/images/bg-footer-top-desktop.svg') no-repeat bottom; 
-            background-size:cover;
+        &::before {
+            background: white url("/images/bg-footer-top-desktop.svg") no-repeat
+                bottom;
+            background-size: cover;
             width: 100%;
-            height: 250px;  
+            height: 250px;
+        }
+        .fifth-block {
+            display: flex;
+            justify-content: space-between;
+
+            .news-letter {
+                order: 2;
+                flex-basis: 50%;
+
+                form {
+                    display: flex;
+                    justify-content: space-between;
+
+                    input[type="email"] {
+                        display: inline-block;
+                        flex-basis: 60%;
+                        margin: 0;
+                    }
+                    input[type="submit"] {
+                        display: inline-block;
+                        flex-basis: 35%;
+                        margin: 0;
+                    }
+                }
+            }
+            .contact {
+                margin-top: 0;
+                order: 1;
+                flex-basis: 40%;
+            }
         }
     }
 }

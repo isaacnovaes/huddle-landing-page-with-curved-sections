@@ -1,0 +1,48 @@
+header {
+    overflow: hidden;
+    nav {
+        img {
+            animation: nav-logo 1.5s ease-in-out 2.4s both;
+        }
+        a {
+            animation: nav-button 1.3s 1.5s both;
+        }
+    }
+}
+.first-block {
+    h1, p, a {
+        animation: block ease-in-out 1s .5s both;
+    }
+}
+@keyframes nav-logo {
+    0% {
+        transform: translateX(-400px);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes block {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes nav-button {
+    0% {
+        transform: translateX(300px);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
