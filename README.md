@@ -12,7 +12,6 @@ This is a solution to the [Huddle landing page with curved sections challenge on
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
     - [Continued development](#continued-development)
   - [Author](#author)
 
@@ -32,49 +31,27 @@ Users should be able to:
 - Desktop[](./screenshot.jpg)
 - Extra[](./screenshot.jpg)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
+- Mobile-first workflow
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [Styled Components](https://styled-components.com/) - For styles
+- Styled Components
 
-### What I learned
-
-To be written
-
-Code snippets that I am proud of, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 ### Continued development
 
-To be written
+I have started this challenge to solidify my knowledge and practise the development workflow. My goal was fulfilled and I am very satisfied with my performance, because I have concluded the challenge much more faster than the time I used for finishing [my first challenge](https://github.com/isaacnovaes/huddle-landing-page-with-curved-sections), [GitHub repository](https://github.com/isaacnovaes/fylo-dark-theme-landing-page). For my next project, I plan on taking a harder task so that I can improve my skills and gain more knowledge in the frontend development.
 
 ## Author
 
-- Frontend Mentor - [@Isaac-Novaes](https://www.frontendmentor.io/profile/Isaac-Novaes)
+- Frontend Mentor prifile - [@Isaac-Novaes](https://www.frontendmentor.io/profile/Isaac-Novaes)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
