@@ -27,6 +27,24 @@
                 width: 100%;
                 height: 200px;
             }
+            div.block div.text{
+                h2{
+                    text-align: left;
+                }
+                p {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+        div.exception div.text{
+           h2{
+               text-align: left;
+           }
+           p {
+               width: 100%;
+               text-align: left;
+           }
         }
         div.set-background-second {
             &::before {
@@ -44,13 +62,22 @@
                 width: 100%;
                 height: 200px;
             }
+            div.block div.text{
+                h2{
+                    text-align: left;
+                }
+                p {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
         }
 
         div.block {
             display: flex;
             align-items: flex-end;
             @include set-container;
-
+           
             &:first-of-type {
                 figure {
                     order: 2;

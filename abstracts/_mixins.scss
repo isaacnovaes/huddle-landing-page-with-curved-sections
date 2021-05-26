@@ -4,14 +4,14 @@
     margin: 0 auto;
 }
 @mixin set-h1 {
-    font-size: $font-proppins;
+    font-family: $font-poppins;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
     color: $very-dark-cyan;
 }
 @mixin set-p {
-    font-size: $font-open;
+    font-family: $font-open;
     text-align: center;
     font-size: 0.98rem;
     width: 60%;

@@ -43,16 +43,19 @@
             }
         }
         h1 {
-            font-size: $font-proppins;
+            font-family: $font-open;
             text-align: center;
-            font-size: 5rem;        
+            font-size: 4.5rem;  
+            font-weight: bolder;      
             margin-bottom: 10px; 
+          
         }
         p{
-            font-size: $font-open;
+            font-family: $font-open;
             text-align: center;
             font-size: 0.98rem;
             margin-bottom: 30px; 
+          
         }
     }
 }
