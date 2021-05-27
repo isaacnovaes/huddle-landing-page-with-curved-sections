@@ -50,7 +50,7 @@ Users should be able to:
 
 ### Continued development
 
-I have started this challenge to solidify my knowledge and practise the development workflow. My goal was fulfilled and I am very satisfied with my performance, because I have concluded the challenge much more faster than the time I used for finishing [my first challenge](https://github.com/isaacnovaes/huddle-landing-page-with-curved-sections), [GitHub repository](https://github.com/isaacnovaes/fylo-dark-theme-landing-page). For my next project, I plan on taking a harder task so that I can improve my skills and gain more knowledge in the frontend development.
+I have started this challenge to solidify my knowledge and practise the development workflow. My goal was fulfilled and I am very satisfied with my performance, because I have concluded the challenge much more faster than the time I used for finishing [my first challenge](https://youthful-stonebraker-6efbf6.netlify.app), [GitHub repository](https://github.com/isaacnovaes/fylo-dark-theme-landing-page). For my next project, I plan on taking a harder task so that I can improve my skills and gain more knowledge in the frontend development.
 
 ## Author
 
