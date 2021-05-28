@@ -55,4 +55,4 @@ I have started this challenge to solidify my knowledge and practise the developm
 ## Author
 
 - Frontend Mentor prifile - [@Isaac-Novaes](https://www.frontendmentor.io/profile/Isaac-Novaes)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
