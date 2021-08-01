@@ -3,6 +3,12 @@ body {
     color: $very-dark-cyan;
 }
 
+/* Correct the inability to style clickable types in iOS and Safari. */
+button, input, textarea {
+    appearance: none;
+}
+
+
 *,
 *::before,
 *::after {
